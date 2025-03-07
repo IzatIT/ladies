@@ -34,8 +34,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 100vh;
-  max-height: 100vh;
+  height: 100vh;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
@@ -54,6 +53,7 @@
 
 .flowers {
   position: relative;
+  bottom: 0;
   transform: scale(0.7);
 }
 
