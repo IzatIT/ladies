@@ -3,8 +3,14 @@
 
 import { useEffect } from 'react'
 import './App.css'
+import { Title } from './components/title';
 
 function App() {
+
+  const handleClickLogo = () => {
+    window.open("https://ukuk.gp.kg", "_blank");
+  };
+
   useEffect(() => {
     const handleLoad = () => {
       setTimeout(() => {
@@ -18,7 +24,10 @@ function App() {
 
   return (
     <div className="not-loaded">
-      <img className='logo' src="/logo.png" />
+      <div className='content'>
+        <Title />
+        <img onClick={handleClickLogo} className='logo' src="/logo.png" />
+      </div>
       <div className="night"></div>
       <div className="flowers">
         <div className="flower flower--1">
